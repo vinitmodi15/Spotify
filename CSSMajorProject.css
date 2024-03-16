@@ -1,0 +1,297 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0px;
+  /* background-color: black; */
+  color: #fff;
+  overflow: hidden;
+  /* background-color: black; */
+}
+.main {
+  display: flex;
+  height: 100vh;
+  padding: 0.5rem;
+  background-color: black;
+  /* overflow: auto; */
+}
+.sidebar {
+  background-color: black;
+  width: 340px; 
+  border-radius: 1rem; /*1rem=16px*/
+  /* color: white; */
+  /* padding-right: 1rem; */
+  margin-right: 0.75rem;
+}
+a {
+  text-decoration: none;
+}
+.main-content {
+  background-color: #121212;
+  flex: 1;
+  /* iska mtlb yeh hota hai ki jitne bhi div ya elements hai flex box container(apne yha p main box k andr aaraha hai aarahe hai saare divs) ke andr unko utni jgh dedo jitna uske uske andr content hai and apn ne yha p sidebar ko width dedi and music-player text jitni size k andr aaraha usko utni jgh deke baaki jitni bhi jgh hai vo aap mujhe(main-content) ko dedo.*/
+  border-radius: 1rem; /*1rem=16px*/
+  padding: 0rem 1.5rem 0rem 1.5rem;
+  overflow:auto;
+}
+.music-player {
+  background-color: black;
+  position: fixed;
+  /* apn ne yha p position fix isliye kri kyoki apna music-player jo h vo fix hai niche isliye  */
+  bottom: 0;
+  width: 100%;
+  height: 72px;
+}
+.nav {
+  background-color: #121212;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  justify-content: center;
+  height: 100px;
+  padding: 0.5rem 0.75rem;
+}
+.nav-option {
+  line-height: 2.5rem;
+  opacity: 0.7;
+  padding: 0.5rem 0.75rem;
+}
+.nav-option:hover {
+  opacity: 1;
+}
+.nav-option i {
+  font-size: 1.25rem;
+}
+
+.nav-option a {
+  margin-left: 1rem;
+  font-size: 1rem;
+}
+.library {
+  background-color: #121212;
+  border-radius: 1rem;
+  height: 100%;
+  margin-top: 0.5rem;
+ padding: 0.5rem 0.75rem;
+}
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* vertically itmes ko center p kiya  */
+  
+}
+.lib-options img {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+.icons{
+    font-size: 1.25rem;
+    opacity: 0.7;
+}
+.icons i{
+    margin-right: 1rem;
+    opacity: 0.7;
+}
+.icons i:hover{
+    opacity: 1;
+}
+.box{
+  background-color: #232323;
+  /* color: white; */
+  height: 8rem;
+  border-radius: 0.75rem;
+  margin: 0.5rem 0 1.75rem 0;
+  padding: 1rem 1rem;
+}
+.box-p1{
+  font-size: 1rem;
+  font-weight: 700;
+  /* line-height: 2rem; */
+}
+.box-p2{
+  font-size: 0.9rem;
+  opacity: 0.9;
+  margin-top: 1rem;
+  /* line-height: 2rem; */
+}
+.badge{
+  background-color: white;
+  color:black;
+  border-radius: 100px;
+  border: none;
+  font-weight: 700;
+  height: 2rem;
+  padding: 0.25rem 1rem;
+  margin-top: 1rem;
+}
+.dark-badge{
+  background-color: black;
+  color: white;
+}
+.sticky-nav{
+  position: sticky;
+  top: 0;
+  background-color: #121212;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0 1rem 0;
+  z-index: 10;
+}
+.sticky-nav-left-option {
+  margin-left: 0.75rem;
+}
+.sticky-nav-right-option{
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+}
+.sticky-nav-items{
+  margin-right: 1rem;
+}
+@media (max-width:1000px){
+  .hide{
+    display: none;
+  }
+}
+.card{
+  background-color: #232323;
+  width: 150px;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-left: 1.5rem;
+}
+.cards-container{
+  display: flex;
+  flex-wrap: wrap;
+  /* height: 16rem; */
+}
+.card-img{
+  width: 100%;
+  border-radius: 0.5rem;
+}
+.card-title{
+  font-weight: 600;
+}
+.card-info{
+  font-size: 0.75rem;
+  opacity: 0.8 ;
+}
+.footer{
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.line{
+  height: 50%;
+  width: 90%;
+  border-top: 1px solid white;
+  opacity: 0.4;
+}
+.music-player{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.album{
+  width: 25%;
+  /* background-color: pink; */
+  display: flex;
+  /* justify-content: space-between; */
+  height:4rem;
+}
+.photoofplayer{
+  /* display: flex; */
+  height: 4rem;
+  width: 4rem;
+}
+.photoofplayer img{
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+}
+.songdetail{
+  margin-left: 1rem;
+  padding-top: 0.5rem;
+  line-height: 1.5rem;
+ 
+}
+.player{
+  width: 50%;
+  /* background-color: orange; */
+}
+.control-icons{
+  width: 25%;
+  /* background-color: aqua; */
+}
+.player-controls{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+.player-icon-control{
+  height: 1rem;
+  margin-right: 1.75rem;
+  opacity: 0.7;
+}
+.player-icon-control:hover{
+  opacity: 1;
+}
+.playback-bar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.progress-bar{
+  width: 70%;
+  appearance: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.progress-bar::-webkit-slider-runnable-track{
+  background-color: #ddd;
+  border-radius: 100px;
+  height: 0.2rem;
+}
+.progress-bar::-webkit-slider-thumb{
+  appearance: none;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  background-color: #1bd760;
+  margin-top: -6px;
+}
+.addtoplaylist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 7rem;
+  /* opacity: +0.5; */
+  /* opacity: 0.3; */
+  /* color: white; */
+  cursor: pointer;
+}
+.addtoplaylist i{
+  opacity: 0.4;
+  color: white;
+}
+
+.addtoplaylist i:hover{
+  opacity: 1;
+}
+/* addtoplaylist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 7rem;
+  opacity: 0.5;
+  color:white;
+  cursor: pointer;
+} */
+/* .addtoplaylist i{
+  opacity:0.5;
+}
+ .addtoplaylist i:hover{
+  opacity: 1;
+}  */
